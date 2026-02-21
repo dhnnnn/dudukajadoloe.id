@@ -1,0 +1,727 @@
+<!doctype html>
+<html class="light" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>dudukajadoloe | Sewa Piknik Mewah</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#19e619",
+              "background-light": "#fdfbf7",
+              "background-dark": "#112111",
+              sage: "#e8f0e8",
+              forest: "#0e1b0e",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+              serif: ["Georgia", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      .serif-heading {
+        font-family: "serif";
+      }
+      .glass-nav {
+        backdrop-filter: blur(8px);
+        background-color: rgba(253, 251, 247, 0.8);
+      }
+      .dark .glass-nav {
+        background-color: rgba(17, 33, 17, 0.8);
+      }
+    </style>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-forest dark:text-white transition-colors duration-300"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-forest/5 dark:border-white/5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2 group cursor-pointer">
+          <img src="assets/logo.png" alt="dudukajadoloe logo" class="size-10 object-contain" />
+          <h1 class="text-xl font-extrabold tracking-tight">
+            dudukajadoloe
+          </h1>
+        </div>
+        <nav class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors"
+            href="#about"
+            >Tentang Kami</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors"
+            href="#packages"
+            >Pilihan Paket</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors"
+            href="#gallery"
+            >Galeri</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-primary transition-colors"
+            href="#why"
+            >Mengapa Kami</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            class="bg-primary text-forest px-6 py-2.5 rounded-lg font-bold text-sm tracking-wide hover:shadow-lg hover:shadow-primary/20 transition-all"
+          >
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section
+        class="relative min-h-screen flex items-center justify-center pt-20"
+      >
+        <div class="absolute inset-0 z-0">
+          <div class="absolute inset-0 bg-black/30 z-10"></div>
+          <div
+            class="w-full h-full bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuALfg7jw3ydkypJSLw_n-D-ItoluNqCHdOA2svoiS6wYX8n1A4t8gZnPxDPqykX14aNboinuCS-pnvC71FHYVxQw_91dKDvkd58CyrCX-6iLbmpdurYeHu9a8LAqr5tqOO8DbsxiUtKiLqp3GHmC5_xh7wj9tGAemV2CDTaVhKl3U2fZ4SgNKyHRu5L1bRv08UjooSkNaRDa35y-9LA7E4hzinjIQQy_dyXwLAlktbiwXvlHX039vK9opMagx_c9YMPB-x4q8xVlu6W&quot;);
+            "
+          ></div>
+        </div>
+        <div class="relative z-20 text-center px-6 max-w-4xl mx-auto">
+          <h1
+            class="serif-heading text-white text-5xl md:text-7xl font-normal leading-tight mb-6"
+          >
+            <span class="italic text-primary">Sempurnakan</span> Momen Luar
+            Ruangan Anda
+          </h1>
+          <p
+            class="text-white/90 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto leading-relaxed"
+          >
+            Pengalaman piknik mewah yang dikurasi khusus untuk kenangan terindah
+            Anda. Kami mengurus segalanya, Anda cukup menikmati pemandangan.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="bg-primary text-forest px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform"
+            >
+              Pesan Sekarang
+            </button>
+            <button
+              class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all"
+            >
+              Lihat Paket
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 bg-sage dark:bg-background-dark" id="about">
+        <div
+          class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center"
+        >
+          <div class="order-2 md:order-1">
+            <div class="relative">
+              <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+                <div
+                  class="w-full h-full bg-cover bg-center"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBdL-ied5WEmlqRLSPjMNKsMD4DdvqZOcJdglqT1VaRkA2sai6qCobxZ-DsDBKwrV27VPnNpautkcPUFY_JVjmqvZdVmOl3-kUkTyExfcZU_JEdecT62mLjNSqKpnDbRg50Mk8mflLaTmkvfpasEwbfe82vWvNVq2uWCFf-LjEakWWpAAMpOBjU6c9Jw6ubnrUJxpxu8hUXE8sQDKUL67gsxrB6s3tOot2tcCy46dfCgMvNU4C4cxyC-56RqB7O_B7HNwEWhHg-Q_lD&quot;);
+                  "
+                ></div>
+              </div>
+              <div
+                class="absolute -bottom-6 -right-6 bg-white dark:bg-forest p-6 rounded-xl shadow-xl hidden lg:block max-w-xs"
+              >
+                <p class="text-sm font-medium leading-relaxed italic">
+                  "Misi kami adalah menghadirkan keanggunan dalam kesederhanaan
+                  alam terbuka."
+                </p>
+                <p
+                  class="text-xs mt-3 font-bold uppercase tracking-widest text-primary"
+                >
+                  — Pendiri
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 md:order-2 space-y-8">
+            <span
+              class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+              >Filosofi Kami</span
+            >
+            <h2 class="serif-heading text-4xl md:text-5xl leading-tight">
+              Seni Berpiknik <br />yang Sesungguhnya
+            </h2>
+            <p
+              class="text-forest/70 dark:text-white/70 text-lg leading-relaxed"
+            >
+              Kami percaya setiap momen di luar ruangan harus menjadi sebuah
+              mahakarya. Tim kami menangani setiap detail mulai dari persiapan
+              hingga pembersihan, sehingga Anda dapat bersantai sepenuhnya. Kami
+              memadukan estetika premium dengan kenyamanan untuk menciptakan
+              tempat peristirahatan di alam.
+            </p>
+            <div class="grid grid-cols-2 gap-8 pt-4">
+              <div class="space-y-2">
+                <h4 class="font-bold text-xl">500+</h4>
+                <p class="text-sm text-forest/60 dark:text-white/60">
+                  Momen Tercipta
+                </p>
+              </div>
+              <div class="space-y-2">
+                <h4 class="font-bold text-xl">25+</h4>
+                <p class="text-sm text-forest/60 dark:text-white/60">
+                  Lokasi Pilihan
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-6 bg-background-light dark:bg-background-dark"
+        id="packages"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 space-y-4">
+            <span
+              class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+              >Opsi Paket</span
+            >
+            <h2 class="serif-heading text-4xl md:text-5xl">Pilihan Paket</h2>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-forest/40 p-10 rounded-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border border-forest/5 dark:border-white/5 hover:-translate-y-2 transition-transform"
+            >
+              <h3 class="text-2xl font-bold mb-2">Romantis</h3>
+              <div class="flex items-baseline gap-1 mb-6">
+                <span class="text-3xl font-black">Rp 350.000</span>
+                <span
+                  class="text-forest/50 dark:text-white/50 text-sm font-medium"
+                  >/ 2 jam</span
+                >
+              </div>
+              <p class="text-forest/60 dark:text-white/60 mb-8 text-sm">
+                Sempurna untuk perayaan hari jadi, lamaran, atau sekadar hari
+                istimewa berdua.
+              </p>
+              <ul class="space-y-4 mb-10">
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Dekorasi intim untuk berdua</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Minuman segar &amp; gelas kristal</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Bantal empuk &amp; karpet estetis</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Speaker Bluetooth termasuk</span>
+                </li>
+              </ul>
+              <button
+                class="w-full py-4 rounded-lg bg-sage dark:bg-white/5 text-forest dark:text-white font-bold hover:bg-primary hover:text-forest transition-colors"
+              >
+                Pilih Paket
+              </button>
+            </div>
+            <div
+              class="bg-white dark:bg-forest/40 p-10 rounded-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-2 border-primary/20 relative hover:-translate-y-2 transition-transform"
+            >
+              <div
+                class="absolute top-0 right-10 -translate-y-1/2 bg-primary text-forest text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg"
+              >
+                Paling Populer
+              </div>
+              <h3 class="text-2xl font-bold mb-2">Keluarga</h3>
+              <div class="flex items-baseline gap-1 mb-6">
+                <span class="text-3xl font-black">Rp 750.000</span>
+                <span
+                  class="text-forest/50 dark:text-white/50 text-sm font-medium"
+                  >/ 3 jam</span
+                >
+              </div>
+              <p class="text-forest/60 dark:text-white/60 mb-8 text-sm">
+                Ruang yang luas untuk seluruh anggota keluarga dengan aktivitas
+                seru.
+              </p>
+              <ul class="space-y-4 mb-10">
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Set lengkap hingga 6 orang</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Permainan luar ruangan</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Kotak makanan ramah anak</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Payung peneduh tambahan</span>
+                </li>
+              </ul>
+              <button
+                class="w-full py-4 rounded-lg bg-primary text-forest font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform"
+              >
+                Pilih Paket
+              </button>
+            </div>
+            <div
+              class="bg-white dark:bg-forest/40 p-10 rounded-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border border-forest/5 dark:border-white/5 hover:-translate-y-2 transition-transform"
+            >
+              <h3 class="text-2xl font-bold mb-2">Perayaan</h3>
+              <div class="flex items-baseline gap-1 mb-6">
+                <span class="text-3xl font-black">Rp 1.500.000</span>
+                <span
+                  class="text-forest/50 dark:text-white/50 text-sm font-medium"
+                  >/ Sepanjang Hari</span
+                >
+              </div>
+              <p class="text-forest/60 dark:text-white/60 mb-8 text-sm">
+                Layanan VIP utama untuk ulang tahun atau pesta bridal shower.
+              </p>
+              <ul class="space-y-4 mb-10">
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Gaya acara kustom sepenuhnya</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Rangkaian bunga premium</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Papan kayu nama kustom</span>
+                </li>
+                <li class="flex gap-3 text-sm items-center">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >check_circle</span
+                  >
+                  <span>Menara Charcuterie &amp; Makanan Penutup</span>
+                </li>
+              </ul>
+              <button
+                class="w-full py-4 rounded-lg bg-sage dark:bg-white/5 text-forest dark:text-white font-bold hover:bg-primary hover:text-forest transition-colors"
+              >
+                Pilih Paket
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-6 bg-sage/30 dark:bg-background-dark/50"
+        id="gallery"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6"
+          >
+            <div>
+              <span
+                class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+                >Galeri</span
+              >
+              <h2 class="serif-heading text-4xl md:text-5xl mt-2">
+                Momen Estetik
+              </h2>
+            </div>
+            <button
+              class="flex items-center gap-2 font-bold text-sm border-b-2 border-primary pb-1 group"
+            >
+              Ikuti kami di Instagram
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="space-y-4">
+              <div class="rounded-xl overflow-hidden aspect-[3/4]">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC-hCkNkYsPAYfM-uv4Jiqx08hNvhmqnmv6QflK7EY3IJrrlW7DZTvDuTsruDqk1JiE9ezN9Eln9unj9ccD_O_eud_Q60RQzLwhAf-dBhb_QfIXNfN4QGDr87FXDN8T5OvCZCjcqKgLc2-0KzV19jz7qu2LkmyjG7P1k-K5oMFev-hDGCbAYEfGtZlDQz3z7foLOTi6CCOIO8eXhYIvP_6JNycI29v-C8fAuwgkAnEUuxoiO5WAS7sOB_JPRRxT6rxHu3G0uamXS-Ef&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="rounded-xl overflow-hidden aspect-square">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDZYqK4fxJPZpENypDRLsTFHJnoM2ZKl8lEMqmDnX5Agt4uUsO3hCGNEaCdUlkZPT--7JaldNj6bwUp3i7lxlKS4_SrF6dm2PVG_6SgE_UUEAF9XbiFbP-wTY0TmdBhrOX20j40z9Q6ioHL5di3zgwGXIYD8lFZlQFAIWYC7xWmHsDdax3_FD94S-1LCjXvXx8eTPwNkUqFx7vx_7yJUQ7Tq4ya74zcfB1GDJAd4mXbKXNz31CeSGvdhNTuXs1dF-a3L_yPDKSE9ZYt&quot;);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="space-y-4 pt-8">
+              <div class="rounded-xl overflow-hidden aspect-square">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA0cHBxReE5pwL1tRFLpPUjZ5G7Uw87Xdbunoe4eRdjsQwbZE7NUme2A3PtBqaM5x3CZrbOA6tRgn_jHaqCOqRiQd6qsfilvafym7FduTNujZ6l65eR3N9u0aDpaKA_kHjYB_O9Rr5UOzHrVraniqeRM4jiwSxLiA-aC9_84Y4CHRgtqD5kLnzxDcbloLbGUvlhgX3hySXS3weKHJjrjqmZ42UO5esd9Bb__ckrwFjIROL45FrIzXaDwyyOqAbKtb2wJeA7nrMgWjv8&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="rounded-xl overflow-hidden aspect-[3/4]">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBcEWIeQN4HAZ8V4lO6wzKKqi5O9hW2DxINifrHNMuSgLNsgef_eLR18DXHLPWOR2REt4Phtx2eNKjMiV9CMJZ69C1fBnNykau4Y4wiP0UEQzc27HjA7jB80Ezcm-ua7yc1GPihmoHARLqSsMJ5L4jD87P_ksXhHWwnOF1ymTfIpJdj2yizfH-4fA2NSZyukovi0ctkzVgkCOf4Y_q3zFf_FUS4HlzYjbNpy6ZKYU79v7XcWeT8SIX4j2epDu6puCS5CdLOJ-b1ZRWp&quot;);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="rounded-xl overflow-hidden aspect-[3/4]">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBensxjYzwN2BXf5Vg_SDG5vfkaFgKs6k07omDfrLKUAVRMMgzjljOK5pwuSI78QySJuV6TiuxItXNDz63WGfm9c6kfIKTJISC8zqIy5JTszWEzOjYS8Maf1qFk9KIP-0u-f2Vd4lp_OnbngJ0hOaccoiZxb_s7XZY115xqznF6eXGKdP4SC0jGYCJ1F7g7oXRaNtNA9NxXYohAHnyVqaG72O046J117leR727D3s3EkeKRdIm8OQuxZvTtA3g94rTrAIvHYRwHrrux&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="rounded-xl overflow-hidden aspect-square">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBtMMTnLlG06-2A7wX8SxMPil-R4MN1aFBEEsTUDz9JAKqGb4hEzV_0kv5vWok_ytlPmFSS7lLqjVLIWQAfMf2ngzyIZa4PksoUli61ndJJ9y8Rn4zUFjjXXci7ifBk0WOkOhCUvO6gpoTQ0HDdkcwQGNjkcrQvfmPsYu2HTNQnoqVsB7sl1_xC1flAZh3srksKk7OvT9VS4LudgX3ay9Kbm6uXsG-u3NWnTruytGpHKFFkVDzWpHZzQIyKFXgr9oM5J_TNGk7Y6k8n&quot;);
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="space-y-4 pt-8">
+              <div class="rounded-xl overflow-hidden aspect-square">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBbJ1PIsjHyQW3Ws0CkR_kJqGzQ8F_SKZGc9rvJVQTrp4H-ToQnTVDue2h3JtVjQdgVeTATJAv2wHYkYJ64QsQbfeo4PSCUeP2CnJVnqZEpyqSTMmNtLUE9ZMUGRWfUTUzHG0iKtA2azusGABZW23MTKgu0xA58untuWfHtSDMzCuDdu-9uNIuyU7AbR1tC5mjFjx9yUc_b-J53F14CS_XvTa-7MK6sj5b0Ty_gWFrJild2oYSOG93LoPg67hX-58g76zoIfP1Hf5nQ&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="rounded-xl overflow-hidden aspect-[3/4]">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuACuqgJhfQs-v5BHFxs6XUMVpLpqazhYvJG-v7rrXngrAtNl-5qhulKu09xr7dodUchxrkHRPSTm9WkrGb_Zw67LP5i9-8m7u4yr0f47TT_naQVgBxnDWEq9AJwC-qlSaSFthnRQ7EzicVO-moXHDFR18Z-JjLM7yGKELBtPLj_Di_eZq299K9vu92g98n0_RhYhpm9cpD-TfM71qJmjfJxssmXWcb8IeQYkEb3YsPuXeizdAQHmmnbFk1DzfEjilDMbG6K-gBg88wp&quot;);
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-6 bg-background-light dark:bg-background-dark"
+        id="why"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 space-y-4">
+            <span
+              class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+              >Kelebihan</span
+            >
+            <h2 class="serif-heading text-4xl md:text-5xl">
+              Mengapa Memilih Kami
+            </h2>
+          </div>
+          <div class="grid md:grid-cols-4 gap-12 text-center">
+            <div class="space-y-4">
+              <div
+                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-4xl">eco</span>
+              </div>
+              <h4 class="text-xl font-bold">Ramah Lingkungan</h4>
+              <p
+                class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
+              >
+                Material berkelanjutan dan tanpa sampah untuk menjaga taman
+                kita.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >nest_multi_room</span
+                >
+              </div>
+              <h4 class="text-xl font-bold">Terima Beres</h4>
+              <p
+                class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
+              >
+                Kami menangani pengantaran, penataan, hingga pembersihan total.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >restaurant</span
+                >
+              </div>
+              <h4 class="text-xl font-bold">Produk Lokal</h4>
+              <p
+                class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
+              >
+                Kudapan dan hidangan artisan dari pembuat lokal terbaik.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >photo_camera</span
+                >
+              </div>
+              <h4 class="text-xl font-bold">Siap Instagram</h4>
+              <p
+                class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
+              >
+                Desain kurasi yang cantik untuk mengabadikan momen Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-6 bg-sage/20 dark:bg-background-dark"
+        id="testimonials"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 space-y-4">
+            <span
+              class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+              >Apa Kata Mereka</span
+            >
+            <h2 class="serif-heading text-4xl md:text-5xl">Testimoni</h2>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white dark:bg-forest/40 p-8 rounded-xl shadow-sm border border-forest/5 dark:border-white/5"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="italic text-forest/70 dark:text-white/70 mb-6">
+                "Pengalaman yang luar biasa! Dekorasinya sangat estetik dan
+                mereka sangat detail. Sangat direkomendasikan untuk kencan
+                romantis."
+              </p>
+              <p class="font-bold">- Sarah A.</p>
+            </div>
+            <div
+              class="bg-white dark:bg-forest/40 p-8 rounded-xl shadow-sm border border-forest/5 dark:border-white/5"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="italic text-forest/70 dark:text-white/70 mb-6">
+                "Piknik keluarga jadi jauh lebih mudah. Anak-anak suka
+                makanannya, dan saya suka karena tidak perlu repot beres-beres."
+              </p>
+              <p class="font-bold">- Budi H.</p>
+            </div>
+            <div
+              class="bg-white dark:bg-forest/40 p-8 rounded-xl shadow-sm border border-forest/5 dark:border-white/5"
+            >
+              <div class="flex text-primary mb-4">
+                <span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span
+                ><span class="material-symbols-outlined">star</span>
+              </div>
+              <p class="italic text-forest/70 dark:text-white/70 mb-6">
+                "Merayakan ulang tahun dengan piknik mewah adalah keputusan
+                terbaik. Fotonya cantik sekali untuk Instagram!"
+              </p>
+              <p class="font-bold">- Indah W.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 px-6 bg-primary">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+          <h2 class="serif-heading text-4xl md:text-5xl text-forest">
+            Bergabung dengan Kami
+          </h2>
+          <p class="text-forest/80 text-lg">
+            Dapatkan penawaran eksklusif dan jadilah yang pertama tahu lokasi
+            piknik rahasia kami.
+          </p>
+          <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+            <input
+              class="flex-1 px-6 py-4 rounded-lg bg-white border-none focus:ring-2 focus:ring-forest text-forest"
+              placeholder="Alamat email Anda"
+              type="email"
+            />
+            <button
+              class="bg-forest text-white px-8 py-4 rounded-lg font-bold hover:bg-forest/90 transition-colors"
+            >
+              Berlangganan
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-background-light dark:bg-background-dark pt-24 pb-12 border-t border-forest/5 dark:border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-20">
+          <div class="col-span-2 space-y-6">
+            <div class="flex items-center gap-2">
+              <img src="assets/logo.png" alt="dudukajadoloe logo" class="size-8 object-contain" />
+              <h1 class="text-xl font-extrabold tracking-tight">
+                dudukajadoloe
+              </h1>
+            </div>
+            <p
+              class="text-forest/60 dark:text-white/60 max-w-sm leading-relaxed"
+            >
+              Mengurasi pengalaman luar ruangan mewah yang menyatukan
+              orang-orang melalui keindahan, alam, dan momen bersama.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="size-10 rounded-full border border-forest/10 dark:border-white/10 flex items-center justify-center hover:bg-primary transition-colors group"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-sm group-hover:text-forest"
+                  >share</span
+                >
+              </a>
+              <a
+                class="size-10 rounded-full border border-forest/10 dark:border-white/10 flex items-center justify-center hover:bg-primary transition-colors group"
+                href="#"
+              >
+                <span
+                  class="material-symbols-outlined text-sm group-hover:text-forest"
+                  >camera</span
+                >
+              </a>
+            </div>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6">Perusahaan</h5>
+            <ul class="space-y-4 text-sm text-forest/60 dark:text-white/60">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Cerita Kami</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Lokasi</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kontak</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="font-bold mb-6">Legal</h5>
+            <ul class="space-y-4 text-sm text-forest/60 dark:text-white/60">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Ketentuan Layanan</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Kebijakan Privasi</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Perjanjian Sewa</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-forest/5 dark:border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-medium text-forest/40 dark:text-white/40"
+        >
+          <p>© 2024 dudukajadoloe. Seluruh hak cipta dilindungi.</p>
+          <p>Didesain untuk Pecinta Alam</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
