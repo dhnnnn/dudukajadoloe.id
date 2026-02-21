@@ -1,11 +1,20 @@
 /* Base styles handled by Tailwind CDN */
 
 :root {
-  --primary: #19e619;
-  --background-light: #fdfbf7;
-  --background-dark: #112111;
-  --sage: #e8f0e8;
-  --forest: #0e1b0e;
+  --primary: #f7d0c7; /* Soft Blush Pink */
+  --primary-hover: #f4b8ab;
+  --secondary: #d1907b; /* Warm Terracotta */
+  --background-light: #fefaf6; /* Warm Cream */
+  --background-dark: #2d1f14; /* Deep Mahogany Dark Mode */
+  --sage: #f8eee4; /* Warm Beige instead of Sage */
+  --forest: #4a3728; /* Chocolate Brown instead of Forest */
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  position: relative;
 }
 
 /* Custom Styles */
@@ -117,13 +126,18 @@
 
 .hover-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 50px -12px rgba(74, 55, 40, 0.15); /* Warmer shadow */
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+#wa-button {
+  box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4);
 }
+
+.wa-active #wa-button {
+  background-color: #128c7e !important; /* Darker WA Green when open */
+}
+
+/* Update WA popup header in CSS if needed, but it's currently using bg-[#25D366] in HTML */
 
 ::-webkit-scrollbar-track {
   background: var(--background-light);

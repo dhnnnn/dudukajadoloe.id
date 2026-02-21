@@ -6,7 +6,7 @@
     <title>dudukajadoloe | Sewa Piknik Mewah</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,11 +21,11 @@
         theme: {
           extend: {
             colors: {
-              primary: "#19e619",
-              "background-light": "#fdfbf7",
-              "background-dark": "#112111",
-              sage: "#e8f0e8",
-              forest: "#0e1b0e",
+              primary: "#f7d0c7",
+              "background-light": "#fefaf6",
+              "background-dark": "#2d1f14",
+              sage: "#f8eee4",
+              forest: "#4a3728",
             },
             fontFamily: {
               display: ["Plus Jakarta Sans", "sans-serif"],
@@ -96,31 +96,32 @@
     </header>
     <main>
       <section
-        class="relative min-h-screen flex items-center justify-center pt-20"
+        class="relative h-[650px] flex items-center justify-center pt-20 overflow-hidden"
       >
-        <div class="absolute inset-0 z-0">
-          <div class="absolute inset-0 bg-black/30 z-10"></div>
+        <div class="absolute inset-0 z-0 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-transparent z-10 transition-all duration-1000"></div>
           <div
-            class="w-full h-full bg-cover bg-center"
+            class="w-full h-full bg-cover bg-center transition-transform duration-[10000ms] ease-out scale-105"
             style="
-              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuALfg7jw3ydkypJSLw_n-D-ItoluNqCHdOA2svoiS6wYX8n1A4t8gZnPxDPqykX14aNboinuCS-pnvC71FHYVxQw_91dKDvkd58CyrCX-6iLbmpdurYeHu9a8LAqr5tqOO8DbsxiUtKiLqp3GHmC5_xh7wj9tGAemV2CDTaVhKl3U2fZ4SgNKyHRu5L1bRv08UjooSkNaRDa35y-9LA7E4hzinjIQQy_dyXwLAlktbiwXvlHX039vK9opMagx_c9YMPB-x4q8xVlu6W&quot;);
+              background-image: url('https://images.unsplash.com/photo-1596243258523-28186f917208?q=70&w=1600&auto=format&fit=crop');
             "
           ></div>
         </div>
-        <div class="relative z-20 text-center px-6 max-w-4xl mx-auto">
+        <div class="relative z-20 text-center px-6 max-w-5xl mx-auto">
           <h1
-            class="serif-heading text-white text-4xl md:text-6xl font-normal leading-tight mb-6 animate-fade-up"
+            class="text-white text-4xl md:text-7xl font-black tracking-tight leading-tight mb-8 animate-fade-up"
+            style="font-family: 'Outfit', sans-serif;"
           >
-            Rehat sejenak dari riuhnya pikiran dikepala dengan <span class="italic text-primary">sewa alat piknikmu</span> disini
+            Rehat sejenak & nikmati <span class="text-primary italic font-serif">momen piknikmu</span> disini
           </h1>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <div class="flex flex-col sm:flex-row gap-6 justify-center animate-fade-up" style="animation-delay: 0.2s">
             <button
-              class="bg-primary text-forest px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform"
+              class="bg-primary text-forest px-10 py-5 rounded-2xl font-extrabold text-xl shadow-[0_10px_20px_-5px_rgba(247,208,199,0.4)] hover:scale-105 active:scale-95 transition-all"
             >
               Pesan Sekarang
             </button>
             <button
-              class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all"
+              class="bg-white/10 backdrop-blur-xl text-white border border-white/30 px-10 py-5 rounded-2xl font-extrabold text-xl hover:bg-white/20 transition-all shadow-xl"
             >
               Lihat Paket
             </button>
@@ -158,10 +159,10 @@
           </div>
           <div class="order-1 md:order-2 space-y-8">
             <span
-              class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+              class="text-secondary font-bold tracking-[0.2em] uppercase text-sm"
               >Filosofi Kami</span
             >
-            <h2 class="serif-heading text-4xl md:text-5xl leading-tight">
+            <h2 class="serif-heading text-4xl md:text-5xl leading-tight text-forest">
               Seni Berpiknik <br />yang Sesungguhnya
             </h2>
             <p
@@ -197,18 +198,18 @@
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-16 space-y-4">
             <span
-              class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+              class="text-secondary font-bold tracking-[0.2em] uppercase text-sm"
               >Opsi Paket</span
             >
-            <h2 class="serif-heading text-4xl md:text-5xl">Pilihan Paket</h2>
+            <h2 class="serif-heading text-4xl md:text-5xl text-forest">Pilihan Paket</h2>
           </div>
           <div class="grid md:grid-cols-3 gap-8">
             <div
-              class="bg-white dark:bg-forest/40 p-10 rounded-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border border-forest/5 dark:border-white/5 hover-card"
+              class="bg-white dark:bg-forest/40 p-10 rounded-[2rem] shadow-[0_10px_40px_rgba(74,55,40,0.03)] border border-forest/5 dark:border-white/5 hover-card"
             >
-              <h3 class="text-2xl font-bold mb-2">Romantis</h3>
+              <h3 class="text-2xl font-black mb-2 text-forest dark:text-white">Romantis</h3>
               <div class="flex items-baseline gap-1 mb-6">
-                <span class="text-3xl font-black">Rp 350.000</span>
+                <span class="text-3xl font-black text-forest dark:text-white">Rp 350.000</span>
                 <span
                   class="text-forest/50 dark:text-white/50 text-sm font-medium"
                   >/ 2 jam</span
@@ -220,47 +221,47 @@
               </p>
               <ul class="space-y-4 mb-10">
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Dekorasi intim untuk berdua</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Minuman segar &amp; gelas kristal</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Bantal empuk &amp; karpet estetis</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Speaker Bluetooth termasuk</span>
                 </li>
               </ul>
               <button
-                class="w-full py-4 rounded-lg bg-sage dark:bg-white/5 text-forest dark:text-white font-bold hover:bg-primary hover:text-forest transition-colors"
+                class="w-full py-4 rounded-xl bg-sage dark:bg-white/5 text-forest dark:text-white font-bold hover:bg-primary hover:text-forest transition-colors shadow-sm"
               >
                 Pilih Paket
               </button>
             </div>
             <div
-              class="bg-white dark:bg-forest/40 p-10 rounded-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-2 border-primary/20 relative hover-card"
+              class="bg-white dark:bg-forest/40 p-10 rounded-[2rem] shadow-[0_20px_50px_rgba(247,208,199,0.15)] border-2 border-primary relative hover-card"
             >
               <div
-                class="absolute top-0 right-10 -translate-y-1/2 bg-primary text-forest text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg"
+                class="absolute top-0 right-10 -translate-y-1/2 bg-forest text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg"
               >
                 Paling Populer
               </div>
-              <h3 class="text-2xl font-bold mb-2">Keluarga</h3>
+              <h3 class="text-2xl font-black mb-2 text-forest dark:text-white">Keluarga</h3>
               <div class="flex items-baseline gap-1 mb-6">
-                <span class="text-3xl font-black">Rp 750.000</span>
+                <span class="text-3xl font-black text-forest dark:text-white">Rp 750.000</span>
                 <span
                   class="text-forest/50 dark:text-white/50 text-sm font-medium"
                   >/ 3 jam</span
@@ -272,42 +273,42 @@
               </p>
               <ul class="space-y-4 mb-10">
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Set lengkap hingga 6 orang</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Permainan luar ruangan</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Kotak makanan ramah anak</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Payung peneduh tambahan</span>
                 </li>
               </ul>
               <button
-                class="w-full py-4 rounded-lg bg-primary text-forest font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform"
+                class="w-full py-4 rounded-xl bg-primary text-forest font-black shadow-lg shadow-primary/30 hover:scale-[1.02] transition-transform"
               >
                 Pilih Paket
               </button>
             </div>
             <div
-              class="bg-white dark:bg-forest/40 p-10 rounded-xl shadow-[0_4px_30px_rgba(0,0,0,0.03)] border border-forest/5 dark:border-white/5 hover-card"
+              class="bg-white dark:bg-forest/40 p-10 rounded-[2rem] shadow-[0_10px_40px_rgba(74,55,40,0.05)] border border-forest/5 dark:border-white/5 hover-card"
             >
-              <h3 class="text-2xl font-bold mb-2">Perayaan</h3>
+              <h3 class="text-2xl font-black mb-2 text-forest dark:text-white">Perayaan</h3>
               <div class="flex items-baseline gap-1 mb-6">
-                <span class="text-3xl font-black">Rp 1.500.000</span>
+                <span class="text-3xl font-black text-forest dark:text-white">Rp 1.500.000</span>
                 <span
                   class="text-forest/50 dark:text-white/50 text-sm font-medium"
                   >/ Sepanjang Hari</span
@@ -318,32 +319,32 @@
               </p>
               <ul class="space-y-4 mb-10">
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Gaya acara kustom sepenuhnya</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Rangkaian bunga premium</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Papan kayu nama kustom</span>
                 </li>
                 <li class="flex gap-3 text-sm items-center">
-                  <span class="material-symbols-outlined text-primary text-lg"
-                    >check_circle</span
+                  <span class="material-symbols-outlined text-secondary text-lg"
+                    >favorite</span
                   >
                   <span>Menara Charcuterie &amp; Makanan Penutup</span>
                 </li>
               </ul>
               <button
-                class="w-full py-4 rounded-lg bg-sage dark:bg-white/5 text-forest dark:text-white font-bold hover:bg-primary hover:text-forest transition-colors"
+                class="w-full py-4 rounded-xl bg-sage dark:bg-white/5 text-forest dark:text-white font-bold hover:bg-primary hover:text-forest transition-colors shadow-sm"
               >
                 Pilih Paket
               </button>
@@ -378,21 +379,56 @@
               >
             </button>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="space-y-4">
-              <div class="rounded-xl overflow-hidden aspect-[3/4]">
+              <div class="rounded-xl overflow-hidden aspect-[3/4] bg-primary/10">
                 <div
                   class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
                   style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC-hCkNkYsPAYfM-uv4Jiqx08hNvhmqnmv6QflK7EY3IJrrlW7DZTvDuTsruDqk1JiE9ezN9Eln9unj9ccD_O_eud_Q60RQzLwhAf-dBhb_QfIXNfN4QGDr87FXDN8T5OvCZCjcqKgLc2-0KzV19jz7qu2LkmyjG7P1k-K5oMFev-hDGCbAYEfGtZlDQz3z7foLOTi6CCOIO8eXhYIvP_6JNycI29v-C8fAuwgkAnEUuxoiO5WAS7sOB_JPRRxT6rxHu3G0uamXS-Ef&quot;);
+                    background-image: url('https://images.unsplash.com/photo-1590604166548-da83c66f7f2d?q=70&w=800&auto=format&fit=crop');
                   "
                 ></div>
               </div>
-              <div class="rounded-xl overflow-hidden aspect-square">
+              <div class="rounded-xl overflow-hidden aspect-square bg-primary/10">
                 <div
                   class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
                   style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDZYqK4fxJPZpENypDRLsTFHJnoM2ZKl8lEMqmDnX5Agt4uUsO3hCGNEaCdUlkZPT--7JaldNj6bwUp3i7lxlKS4_SrF6dm2PVG_6SgE_UUEAF9XbiFbP-wTY0TmdBhrOX20j40z9Q6ioHL5di3zgwGXIYD8lFZlQFAIWYC7xWmHsDdax3_FD94S-1LCjXvXx8eTPwNkUqFx7vx_7yJUQ7Tq4ya74zcfB1GDJAd4mXbKXNz31CeSGvdhNTuXs1dF-a3L_yPDKSE9ZYt&quot;);
+                    background-image: url('https://images.unsplash.com/photo-1517036083581-081830217036?q=70&w=800&auto=format&fit=crop');
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="space-y-4 pt-8">
+              <div class="rounded-xl overflow-hidden aspect-square bg-primary/10">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1526674179247-44ae5821639d?q=70&w=800&auto=format&fit=crop');
+                  "
+                ></div>
+              </div>
+              <div class="rounded-xl overflow-hidden aspect-[3/4] bg-primary/10">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1464454709131-ffd692591ee5?q=70&w=800&auto=format&fit=crop');
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="rounded-xl overflow-hidden aspect-[3/4] bg-primary/10">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=70&w=800&auto=format&fit=crop');
+                  "
+                ></div>
+              </div>
+              <div class="rounded-xl overflow-hidden aspect-square bg-primary/10">
+                <div
+                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
+                  style="
+                    background-image: url('https://images.unsplash.com/photo-1549421263-6064833b001b?q=70&w=800&auto=format&fit=crop');
                   "
                 ></div>
               </div>
@@ -402,43 +438,7 @@
                 <div
                   class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
                   style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA0cHBxReE5pwL1tRFLpPUjZ5G7Uw87Xdbunoe4eRdjsQwbZE7NUme2A3PtBqaM5x3CZrbOA6tRgn_jHaqCOqRiQd6qsfilvafym7FduTNujZ6l65eR3N9u0aDpaKA_kHjYB_O9Rr5UOzHrVraniqeRM4jiwSxLiA-aC9_84Y4CHRgtqD5kLnzxDcbloLbGUvlhgX3hySXS3weKHJjrjqmZ42UO5esd9Bb__ckrwFjIROL45FrIzXaDwyyOqAbKtb2wJeA7nrMgWjv8&quot;);
-                  "
-                ></div>
-              </div>
-              <div class="rounded-xl overflow-hidden aspect-[3/4]">
-                <div
-                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
-                  style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBcEWIeQN4HAZ8V4lO6wzKKqi5O9hW2DxINifrHNMuSgLNsgef_eLR18DXHLPWOR2REt4Phtx2eNKjMiV9CMJZ69C1fBnNykau4Y4wiP0UEQzc27HjA7jB80Ezcm-ua7yc1GPihmoHARLqSsMJ5L4jD87P_ksXhHWwnOF1ymTfIpJdj2yizfH-4fA2NSZyukovi0ctkzVgkCOf4Y_q3zFf_FUS4HlzYjbNpy6ZKYU79v7XcWeT8SIX4j2epDu6puCS5CdLOJ-b1ZRWp&quot;);
-                  "
-                ></div>
-              </div>
-            </div>
-            <div class="space-y-4">
-              <div class="rounded-xl overflow-hidden aspect-[3/4]">
-                <div
-                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
-                  style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBensxjYzwN2BXf5Vg_SDG5vfkaFgKs6k07omDfrLKUAVRMMgzjljOK5pwuSI78QySJuV6TiuxItXNDz63WGfm9c6kfIKTJISC8zqIy5JTszWEzOjYS8Maf1qFk9KIP-0u-f2Vd4lp_OnbngJ0hOaccoiZxb_s7XZY115xqznF6eXGKdP4SC0jGYCJ1F7g7oXRaNtNA9NxXYohAHnyVqaG72O046J117leR727D3s3EkeKRdIm8OQuxZvTtA3g94rTrAIvHYRwHrrux&quot;);
-                  "
-                ></div>
-              </div>
-              <div class="rounded-xl overflow-hidden aspect-square">
-                <div
-                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
-                  style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBtMMTnLlG06-2A7wX8SxMPil-R4MN1aFBEEsTUDz9JAKqGb4hEzV_0kv5vWok_ytlPmFSS7lLqjVLIWQAfMf2ngzyIZa4PksoUli61ndJJ9y8Rn4zUFjjXXci7ifBk0WOkOhCUvO6gpoTQ0HDdkcwQGNjkcrQvfmPsYu2HTNQnoqVsB7sl1_xC1flAZh3srksKk7OvT9VS4LudgX3ay9Kbm6uXsG-u3NWnTruytGpHKFFkVDzWpHZzQIyKFXgr9oM5J_TNGk7Y6k8n&quot;);
-                  "
-                ></div>
-              </div>
-            </div>
-            <div class="space-y-4 pt-8">
-              <div class="rounded-xl overflow-hidden aspect-square">
-                <div
-                  class="w-full h-full bg-cover bg-center hover:scale-110 transition-transform duration-700"
-                  style="
-                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBbJ1PIsjHyQW3Ws0CkR_kJqGzQ8F_SKZGc9rvJVQTrp4H-ToQnTVDue2h3JtVjQdgVeTATJAv2wHYkYJ64QsQbfeo4PSCUeP2CnJVnqZEpyqSTMmNtLUE9ZMUGRWfUTUzHG0iKtA2azusGABZW23MTKgu0xA58untuWfHtSDMzCuDdu-9uNIuyU7AbR1tC5mjFjx9yUc_b-J53F14CS_XvTa-7MK6sj5b0Ty_gWFrJild2oYSOG93LoPg67hX-58g76zoIfP1Hf5nQ&quot;);
+                    background-image: url('https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?q=80&w=2003&auto=format&fit=crop');
                   "
                 ></div>
               </div>
@@ -461,21 +461,21 @@
         <div class="max-w-7xl mx-auto">
           <div class="text-center mb-16 space-y-4">
             <span
-              class="text-primary font-bold tracking-[0.2em] uppercase text-sm"
+              class="text-secondary font-bold tracking-[0.2em] uppercase text-sm"
               >Kelebihan</span
             >
-            <h2 class="serif-heading text-4xl md:text-5xl">
+            <h2 class="serif-heading text-4xl md:text-5xl text-forest">
               Mengapa Memilih Kami
             </h2>
           </div>
           <div class="grid md:grid-cols-4 gap-12 text-center">
             <div class="space-y-4 hover-card p-6 rounded-xl">
               <div
-                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+                class="size-16 bg-primary mx-auto rounded-full flex items-center justify-center text-forest shadow-sm"
               >
                 <span class="material-symbols-outlined text-4xl">eco</span>
               </div>
-              <h4 class="text-xl font-bold">Ramah Lingkungan</h4>
+              <h4 class="text-xl font-bold text-forest">Ramah Lingkungan</h4>
               <p
                 class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
               >
@@ -485,13 +485,13 @@
             </div>
             <div class="space-y-4 hover-card p-6 rounded-xl">
               <div
-                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+                class="size-16 bg-primary mx-auto rounded-full flex items-center justify-center text-forest shadow-sm"
               >
                 <span class="material-symbols-outlined text-4xl"
                   >nest_multi_room</span
                 >
               </div>
-              <h4 class="text-xl font-bold">Terima Beres</h4>
+              <h4 class="text-xl font-bold text-forest">Terima Beres</h4>
               <p
                 class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
               >
@@ -500,13 +500,13 @@
             </div>
             <div class="space-y-4 hover-card p-6 rounded-xl">
               <div
-                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+                class="size-16 bg-primary mx-auto rounded-full flex items-center justify-center text-forest shadow-sm"
               >
                 <span class="material-symbols-outlined text-4xl"
                   >restaurant</span
                 >
               </div>
-              <h4 class="text-xl font-bold">Produk Lokal</h4>
+              <h4 class="text-xl font-bold text-forest">Produk Lokal</h4>
               <p
                 class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
               >
@@ -515,13 +515,13 @@
             </div>
             <div class="space-y-4 hover-card p-6 rounded-xl">
               <div
-                class="size-16 bg-sage dark:bg-forest mx-auto rounded-full flex items-center justify-center text-primary"
+                class="size-16 bg-primary mx-auto rounded-full flex items-center justify-center text-forest shadow-sm"
               >
                 <span class="material-symbols-outlined text-4xl"
                   >photo_camera</span
                 >
               </div>
-              <h4 class="text-xl font-bold">Siap Instagram</h4>
+              <h4 class="text-xl font-bold text-forest">Siap Instagram</h4>
               <p
                 class="text-sm text-forest/60 dark:text-white/60 leading-relaxed"
               >
@@ -599,11 +599,11 @@
       <section class="py-24 px-6 bg-primary">
         <div class="max-w-4xl mx-auto text-center space-y-8">
           <h2 class="serif-heading text-4xl md:text-5xl text-forest">
-            Bergabung dengan Kami
+            Ikuti perjalanan kami
           </h2>
           <p class="text-forest/80 text-lg">
-            Dapatkan penawaran eksklusif dan jadilah yang pertama tahu lokasi
-            piknik rahasia kami.
+            Dapatkan inspirasi piknik estetik dan penawaran eksklusif langsung
+            di email Anda.
           </p>
           <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
             <input
@@ -707,7 +707,7 @@
           class="border-t border-forest/5 dark:border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-medium text-forest/40 dark:text-white/40"
         >
           <p>© 2026 dudukajadoloe. Seluruh hak cipta dilindungi.</p>
-          <p>Didesain untuk Pecinta Alam</p>
+          <p>Handcrafted for Intimate Moments</p>
         </div>
       </div>
     </footer>
@@ -721,11 +721,11 @@
             <svg class="size-8 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             <h4 class="font-bold text-lg">Mulai Percakapan</h4>
           </div>
-          <p class="text-sm opacity-90 leading-relaxed">Halo! Klik salah satu tim kami di bawah untuk chat via <span class="font-bold">WhatsApp</span></p>
+          <p class="text-sm border-white/20 border-t pt-2 leading-relaxed opacity-90 italic">Halo! Klik salah satu tim kami di bawah untuk chat via <span class="font-bold">WhatsApp</span></p>
         </div>
         <div class="p-6 bg-[#f0f2f5]">
           <p class="text-[11px] text-gray-400 font-medium mb-4 uppercase tracking-wider">Tim kami biasanya membalas dalam beberapa menit.</p>
-          <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-between bg-white p-4 rounded-xl border-l-[3px] border-[#25D366] hover:bg-gray-50 transition-colors group">
+          <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center justify-between bg-white p-4 rounded-xl border-l-[3px] border-[#25D366] hover:bg-gray-50 transition-colors group shadow-sm">
             <div class="flex items-center gap-4">
               <div class="size-10 bg-[#25D366]/10 rounded-full flex items-center justify-center">
                 <svg class="size-6 fill-[#25D366]" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
@@ -745,11 +745,11 @@
         <div id="wa-label" class="bg-white px-4 py-2 rounded-lg shadow-xl text-forest text-sm font-bold border border-gray-100">
           Butuh Bantuan? <span class="font-extrabold text-forest">Chat kami</span>
         </div>
-        <button id="wa-button" class="group size-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300">
+        <button id="wa-button" class="group size-16 bg-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300">
           <!-- WhatsApp Icon -->
-          <svg id="wa-icon" class="size-10 fill-white transition-opacity duration-300" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <svg id="wa-icon" class="size-10 fill-[#25D366] transition-opacity duration-300" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           <!-- Close Icon (Hidden by default) -->
-          <svg id="wa-close" class="hidden size-8 fill-white transition-opacity duration-300" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg id="wa-close" class="hidden size-8 fill-[#25D366] transition-opacity duration-300" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </div>
     </div>
