@@ -48,4 +48,33 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenu.classList.toggle('hidden');
         });
     }
+
+    // WhatsApp Flow
+    const waButton = document.getElementById('wa-button');
+    const waPopup = document.getElementById('wa-popup');
+    const waIcon = document.getElementById('wa-icon');
+    const waClose = document.getElementById('wa-close');
+    const waLabel = document.getElementById('wa-label');
+
+    if (waButton && waPopup) {
+        waButton.addEventListener('click', () => {
+            const isVisible = waPopup.classList.contains('wa-popup-visible');
+            
+            if (!isVisible) {
+                // Open
+                waPopup.classList.add('wa-popup-visible');
+                waIcon.classList.add('hidden');
+                waClose.classList.remove('hidden');
+                waLabel.classList.add('wa-label-hide');
+                waButton.classList.add('wa-active');
+            } else {
+                // Close
+                waPopup.classList.remove('wa-popup-visible');
+                waLabel.classList.remove('wa-label-hide');
+                waIcon.classList.remove('hidden');
+                waClose.classList.add('hidden');
+                waButton.classList.remove('wa-active');
+            }
+        });
+    }
 });
